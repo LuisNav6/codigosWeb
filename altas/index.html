@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tree {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.trunk {
+  position: absolute;
+  bottom: 0;
+  width: 10px;
+  height: 20px;
+  background-color: brown;
+}
+
+.branch {
+  position: absolute;
+  bottom: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.ornament {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+    </style>
+</head>
+<body>
+    <div id="tree">
+        <div class="trunk"></div>
+        <div class="branch">
+          <div class="ornament"></div>
+        </div>
+        <div class="branch">
+          <div class="ornament"></div>
+          <div class="ornament"></div>
+        </div>
+        <div class="branch">
+          <div class="ornament"></div>
+          <div class="ornament"></div>
+          <div class="ornament"></div>
+        </div>
+      </div>      
+   <script>
+       const tree = document.querySelector("#tree");
+
+function addOrnaments(branch, count) {
+  const spacing = branch.offsetWidth / (count + 1);
+  for (let i = 1; i <= count; i++) {
+    const ornament = document.createElement("div");
+    ornament.classList.add("ornament");
+    ornament.style.left = i * spacing - ornament.offsetWidth / 2 + "px";
+    ornament.style.top = -ornament.offsetHeight / 2 + "px";
+    branch.appendChild(ornament);
+  }
+}
+
+addOrnaments(tree.children[1], 1);
+addOrnaments(tree.children[2], 2);
+addOrnaments(tree.children[3], 3);
+
+   </script>
+</body>
+</html>

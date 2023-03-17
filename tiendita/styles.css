@@ -1,0 +1,43 @@
+.card-body{
+    text-align: center;
+}
+.card{
+    background-color: rgb(41, 43, 50);
+}
+.btn:hover{
+transform: scale(1.1);
+transition: 1s;
+}
+.table{
+    text-align: center;
+}
+*{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+}
+#btn{
+    background-color:rgb(242, 72, 72);
+    text-align: center;
+    border: none;
+    color: white;
+}
+#btn:hover{
+    transform: scale(1.1);
+    transition: 1s; 
+}
+.cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#precioT{
+color: rgb(242, 72, 72);
+}
+#name{
+    text-align: center;
+}
