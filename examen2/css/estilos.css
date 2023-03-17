@@ -1,0 +1,27 @@
+
+.informationImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carruselNormal{
+    height: 0.5fr;
+    width: 0.5fr;
+}
+
+.cardsLeng{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 35px;
+
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#29323c;
+}

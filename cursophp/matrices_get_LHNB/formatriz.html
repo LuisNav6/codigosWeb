@@ -1,0 +1,48 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+        <style>
+            .mb-3{
+                width: 300px;
+            }
+            body{
+                background-color: #f89b44;
+            }
+            .form-control{
+                background-color: rgb(101, 211, 255);
+                font-family: 'Silkscreen';
+            }
+            .form-label{
+                font-family: 'Silkscreen';
+            }
+        </style>  
+    </head>
+<body>
+    <form action="http://localhost:8888/cursophp/matrices.php" method="get">
+        <div>
+        <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Total de renglones: </label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="ren" required>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Total de filas: </label>
+    <input type="text" class="form-control" id="exampleInputPassword1" name="fil" required>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Límite superior: </label>
+    <input type="text" class="form-control" id="exampleInputPassword1" name="sup" required>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Límite inferior: </label>
+    <input type="text" class="form-control" id="exampleInputPassword1" name="inf" required>
+  </div>
+  <button type="submit" class="btn btn-primary" style="font-family: 'Silkscreen';">Enviar</button>
+</form>
+</div>
+    </form>
+</body>
+</html>
