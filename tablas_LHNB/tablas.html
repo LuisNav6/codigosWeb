@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+     <meta charset="UTF-8">
+     <title> TABLA </title>
+     <style>
+         table, th, td {
+           border: 1px solid black;
+           border-collapse: collapse;
+           padding: 10px;
+           text-align: center;
+         }     
+         body {
+             margin-left:  50px;
+         }
+         tr:hover{
+          background: #19e72a;
+         }
+        </style>
+   </head>
+   <body>
+        <h1> tabla </h1>
+        <h6> Luis Navarrrete </h6>
+        <table>
+            <tr>
+                <th>Nombre</th> <!-- Encabezados-->
+                <th>Apellido</th>
+                <th>Puntos</th>
+            </tr>
+            <tr>
+                <td>Francisco</td> <!-- Celdas-->
+                <td>Aguirre</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Eduardo</td>
+                <td>Ramirez</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Luis</td>
+                <td>Mejia</td>
+                <td>9</td>
+            </tr>
+        </table>   
+        <br>
+        <button onclick="cerrar()">cerrar</button>
+        <script>
+            function cerrar(){
+                window.close();
+            }
+        </script>
+   </body>
+</html>
