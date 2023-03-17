@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> citas</title>
+    <!--link:css -->
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+     <!-- div>form>fieldset>table>tr*5>td*2 -->
+     <h1>LUIS NAVARRETE</h1>
+    <div>
+        <form action="">
+            <fieldset>
+                <legend>Cita Médica</legend>
+                <table>
+                    <tr>
+                        <td><label for="nombre">Nombre: </label></td>
+                        <td><input id="nombre" type="text" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="edad">Edad: </label></td>
+                        <td><input id="edad" type="number" min="18" max="65" ></td>
+                    </tr>
+                    <tr>
+                        <td>Sexo: </td>
+                        <td>
+                            <input type="radio" name="sexo" value="dama" id="dama" checked>
+                            <label for="dama">Mujer</label>
+                            <input type="radio" name="sexo" value="caballero" id="caballero">
+                            <label for="caballero">Hombre</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="fecha">Fecha:</label></td>
+                        <td><input id="fecha" type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><input onclick="show()" type="button" value="Ver" title="Ver información"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+  
+     
+     <!--script:src -->
+     <script src="js/funciones.js"></script>   
+</body>
+</html>

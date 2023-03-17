@@ -1,0 +1,28 @@
+div {
+    width: 30%;
+}
+
+body{
+    margin: 40px;
+    background-image:url("../images/fondo.jpeg");
+}
+
+fieldset{
+    background-color:lightblue;
+}
+
+@font-face {
+    font-family:'Courier New', Courier, monospace;
+    src: url("../fonts/dancing.woff2");
+}
+
+legend{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight:bold;
+    font-size: 30px;
+}
+h1, td{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}

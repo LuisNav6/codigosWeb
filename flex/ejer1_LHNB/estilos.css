@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    }
+h1{
+    background-color: cadetblue;
+}
+    #main {
+        display: flex;
+        }
+        body {
+        display: flex;
+        flex: column;
+        margin: 0;
+        }
+        header, footer { 
+            background: gray; 
+            height: 20vh;
+        }
+        #main>nav {
+            background: blueviolet;
+        }
+        #main>aside { 
+            background: white;
+        }
+
+        #main > article { 
+            order: 1;
+        }
+        #main > aside { 
+            background:cadetblue; 
+            order: 2;
+            color: white;
+        }
+        #main > nav { 
+           background: black; 
+           order: 3;
+           color: white;
+        }
+        header, footer,
+        article, nav, aside {
+          padding: 1em; 
+        }
+        #main>article { 
+            order: 1;
+            flex: 1; 
+        }
+        #main > nav,
+        #main > aside {
+           flex: 0 0 20vw;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column; margin: 0;
+        }
+        #main {
+            display: flex;
+            flex: 1; 
+        }
+        *{
+            box-sizing: border-box;
+        }
