@@ -1,0 +1,49 @@
+.contenedor{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1/fr 1/fr 1/fr;
+    grid-template-areas:  "header     header     header"
+                          "sidebar-1  contenido  sidebar-2"
+                          "sidebar-1  widgets    sidebar-2"
+                          "footer     footer     footer";  
+}
+.contenedor .header{
+    background: red;
+    /*grid-column-start: 1;
+    grid-column-end: 4;*/
+
+    grid-column-start: header;
+    grid-column-end: header;
+}
+.contenedor .sidebar-1{
+    background: aquamarine;
+
+   /* grid-column-start: sidebar-1;
+    grid-column-end: sidebar-1;
+
+    grid-row-start: sidebar-1;
+    grid-row-end: sidebar-1;*/
+
+    /*grid-column: sidebar-1;
+    grid-row: sidebar-1;*/
+
+    grid-area: sidebar-1;
+}
+.contenedor .contenido{
+    background: white;
+    color: black;
+    grid-area: contenido;
+}
+.contenedor .widgets{
+    background: yellow;
+    color: black;
+    grid-area: widgets;
+}
+.contenedor .sidebar-2{
+    background-color: violet;
+    grid-area: sidebar-2;
+}
+.contenedor .footer{
+    background: black;
+    grid-area: footer;
+}

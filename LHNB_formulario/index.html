@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>formulario</title>
+        <link rel="stylesheet" href="estilos2.css">
+    </head>
+    <body>
+        <h1>LUIS NAVARRETE</h1>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Catálogo de Arte</legend>
+                    <table>
+                        <tr>
+                            <th>Introduce los términos de búsqueda:</th>
+                        </tr>
+                        <tr>
+                            <th>OBRA</th>
+                            <th><pre>         TIPO        </pre></th>
+                            <th>DISPONIBLIDAD</th>
+                            <th> <pre>    ESTILO       </pre></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="titulo">Título:</label>
+                                <input id="titulo" type="text">
+                                <br>
+                                <label for="autor">Autor: </label>
+                                <input id="autor" type="text">
+                            </td>
+                            <td>
+                                <input type="checkbox" id="tipo1" name="tipo1" value="escritura">
+                                <label for="tipo1"> Escritura</label><br>
+                                <input type="checkbox" id="tipo2" name="tipo2" value="Arquitectura">
+                                <label for="tipo2"> Arquitectura</label><br>
+                                <input type="checkbox" id="tipo3" name="tipo3" value="Pintura">
+                                <label for="tipo3"> Pintura</label><br>
+                            </td>
+                            <td>
+                              <input type="radio" name="museo" value="museo" id="museo" >
+                              <label for="museo">Museo/Acceso público</label>
+                              <br>
+                              <input type="radio" name="privado" value="privado" id="privado">
+                              <label for="caballero">Colección privada</label>
+                            </td>
+                            <td>
+                                <label for="estilo">Elige un estilo: </label>
+                                <br>
+                                <select name="estilos">
+                                    <option>Moderno</option>
+                                    <option>Abstracto</option>
+                                    <option>Barroco</option>
+                                    <option>Renacentista</option>
+                                    <option>Primitivo</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="sugerencias">Háganos saber sus sugerencias: </label>
+                                <br>
+                                <textarea id="texto" name="texto"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="Buscar" title="Buscar"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

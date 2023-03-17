@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>ejemplo 2</title>
+        <style>
+            body{
+                background-color:darkblue;
+            }
+            #container{
+                margin-top: 100px;
+                text-align: center;
+            }
+            .image{
+                display: inline-block;
+                width: 300px;
+            }
+            .name{
+                background-color: black;
+                color: white;
+                padding: 10px;
+                width: 100px;
+
+                display: none;
+                position: absolute;
+                margin-left: 100px;
+                top: 300px;
+            } 
+            .image:hover .name{
+                display: block;
+
+            }
+            h1{
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>LUIS NAVARRETE</h1>
+        <div id="container">
+            <div class="image">
+               <img src="images/goku.jpeg" id="imagen01">
+              <div class="name">
+                   Goku 1
+              </div>
+            </div>
+            <div class="image">
+               <img src="images/goku2.jpeg" id="imagen02">
+               <div class="name">
+                   Goku 2
+               </div>
+            </div>
+            <div class="image">
+                <img src="images/dg3.jpeg" id="imagen03">
+                <div class="name">
+                    Dragon Ball
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

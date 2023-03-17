@@ -1,0 +1,333 @@
+*{margin: 0; padding: 0;}
+
+body{
+    background-color: white;
+    height: 100%;
+}
+
+@font-face {
+    font-family: Victoria-Secret;
+    src: url("../media/fonts/Victoria-Secret-Font.ttf");
+    font-family: Beauty;
+    src: url("../media/fonts/beauty.woff");
+    font-family: Pik;
+    src: url("../media/fonts/pink.woff");
+}
+.bea{
+    font-family: Beauty;
+    font-weight: bold;
+}
+.pik{
+    font-family: Pik;
+    font-weight: bold;
+}
+h1{
+    font-family: Victoria-Secret;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0px;
+    background-color: rgba(241, 235, 235, 0.911);   
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+header .icons i{
+    float: right;
+    line-height: 100px;
+    display: inline-block;
+    padding: 20px 20px;
+    line-height: normal;
+    -webkit-transition: all 500ms ease ;
+    -o-transition: all 500ms ease ;
+    transition: all 500ms ease;
+}
+
+header nav{
+    float: left;
+    line-height: 50px;
+}
+
+header nav a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 20px 20px;
+    line-height: normal;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+
+.bolded{
+    font-weight: bold;
+}
+
+header nav a::after{
+    display: block;
+    content: "";
+    margin: auto;
+    width: 0;
+    height: 2px;
+    background-color: pink;
+    transition: width 0.3s;
+}
+
+header nav a:hover::after{
+    width: 100%;   
+}
+
+header .icons i:hover{
+    background: rgb(158, 158, 158);
+    border-radius: 0%;
+}
+
+i{
+    color: black;
+}
+
+body .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    line-height: 100px;
+}
+
+body .menu a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 50px 20px;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Propiedades Slider */
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+    display: none;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin:auto;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    background: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 60vh;
+    padding: 10px 40px;
+}
+
+.container .swiper-container {
+    width: 80%;
+    height: 100%;
+}
+
+.container .swiper-slide {
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+    background: #fff;
+    text-align: start;
+    box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+}
+
+.container .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .swiper-slide .card-description {
+    padding: 1rem 1rem;
+}
+
+.container .swiper-slide .card-title,
+.container .swiper-slide .card-text {
+    margin-bottom: .5rem;
+}
+
+.container .swiper-slide .card-link {
+    text-align: center;
+}
+
+.container .swiper-slide .card-link a {
+    display: flex;
+    justify-content: center;
+    border-radius: 2em;
+    background-color: pink;
+
+    text-decoration: none;
+
+    color: black;
+}
+
+.swiper-button-next {
+    right: 26px !important;
+}
+
+.swiper-button-prev {
+    left: 26px !important;
+}
+
+/*segunda parte*/
+
+@font-face {
+    font-family: 'BEBAS_NEUE';
+    src: url("../media/fonts/BEBAS_NEUE.woff2");
+}
+.primero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    font-family:'BEBAS_NEUE';
+}
+.saber{
+    font-weight: bold;
+}
+p{
+    display:inline;
+}
+.segundo{
+    display: flex;
+    background-color: #ffe6ef;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 45px;
+    margin-left: 90px;
+    margin-right: 65px;
+    font-family:'BEBAS_NEUE';
+}
+.tercero{
+    display: flex;
+    background-color: #ffb3cb;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content:space-around;
+    margin-left: 85px;
+    margin-right: 60px;
+    font-family:'BEBAS_NEUE';
+}
+body{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+table{
+    text-align: center;
+}
+.per:hover{
+    border:1px solid #db5cca;
+}
+.seg:hover{
+    border:1px solid #db5cca;
+}
+.ter:hover{
+    border:1px solid #db5cca;
+}
+.cuar:hover{
+    border:1px solid #db5cca;
+}
+.cuarto{
+    font-size:xx-small;
+    display: flex;
+    background-color: #eeecec;
+    flex-direction: row;
+    align-items:baseline;
+    justify-content: space-evenly;
+    padding-left: 80px;
+    padding-right: 215px;
+    font-family:'BEBAS_NEUE';
+}
+#logo2:hover{
+background-color:#db5cca ;
+}
+#logo1:hover{
+    background-color:#db5cca ;
+}
+#ubi:hover{
+    background-color: #db5cca;
+}
+

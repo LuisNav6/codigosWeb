@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Victoria-Secret;
+    src: url("../fonts/Victoria-Secret-Font.ttf");
+}
+fieldset{
+    background-color:#ffe6ef;
+    text-decoration: none;
+}
+div{
+    width: 90%;
+    height: max-content;
+}
+th, pre{
+    font-family: Victoria-secret;
+    font-weight: bold;
+    text-align: center;
+}
+td{
+    font-size:small;
+    font-family: Victoria-secret;
+    font-weight: bold;
+}
+legend{
+    font-family:Victoria-secret;
+    text-align: center;
+    font-weight:bold;
+    font-size: 30px;
+}
+body{
+    padding-right: 38px;
+    background-image: url("../media/images/fondo.jpeg");
+}
+
+.botn:hover{
+    background-color:#ffb3cb;
+}
+.botn{
+    border-radius: 0%;
+    text-decoration: none;
+    background-color: white;
+}
+*{margin: 0; padding: 0;}
+
+body{
+    background-color: white;
+    height: 100%;
+}
+
+h1{
+    font-family: Victoria-secret;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0px;
+    background-color: rgba(241, 235, 235, 0.911);   
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+header .icons i{
+    float: right;
+    line-height: 100px;
+    display: inline-block;
+    padding: 20px 20px;
+    line-height: normal;
+    -webkit-transition: all 500ms ease ;
+    -o-transition: all 500ms ease ;
+    transition: all 500ms ease;
+}
+
+header nav{
+    float: left;
+    line-height: 50px;
+}
+
+header nav a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 20px 20px;
+    line-height: normal;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+
+.bolded{
+    font-weight: bold;
+}
+
+header nav a::after{
+    display: block;
+    content: "";
+    margin: auto;
+    width: 0;
+    height: 2px;
+    background-color: pink;
+    transition: width 0.3s;
+}
+
+header nav a:hover::after{
+    width: 100%;   
+}
+
+header .icons i:hover{
+    background: rgb(158, 158, 158);
+    border-radius: 0%;
+}
+
+i{
+    color: black;
+}
+
+body .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    line-height: 100px;
+}
+
+body .menu a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 50px 20px;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+a{
+    text-decoration: none;
+}

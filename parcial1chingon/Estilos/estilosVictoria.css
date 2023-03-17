@@ -1,0 +1,334 @@
+/* Header */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: Victoria-Secret;
+    src: url("../media/fonts/Victoria-Secret-Font.ttf");
+    font-family: Beauty;
+    src: url("../media/fonts/beauty.woff");
+    font-family: Pik;
+    src: url("../media/fonts/pink.woff");
+}
+body {
+    background-color: white;
+    height: 100%;
+}
+.bea {
+    font-family: Beauty;
+    font-weight: bold;
+}
+
+.pik {
+    font-family: Pik;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: Victoria-Secret;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0px;
+    background-color: rgba(241, 235, 235, 0.911);
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+header .icons i {
+    float: right;
+    line-height: 100px;
+    display: inline-block;
+    padding: 20px 20px;
+    line-height: normal;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+header nav {
+    float: left;
+    line-height: 50px;
+}
+
+header nav a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 20px 20px;
+    line-height: normal;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+header nav a::after {
+    display: block;
+    content: "";
+    margin: auto;
+    width: 0;
+    height: 2px;
+    background-color: pink;
+    transition: width 0.3s;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+header .icons i:hover {
+    background: rgb(158, 158, 158);
+    border-radius: 0%;
+}
+
+i {
+    color: black;
+}
+
+body .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    line-height: 100px;
+}
+
+body .menu a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 50px 20px;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* /Header */
+
+.main {
+    width: 90%;
+    background: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    min-height: 60vh;
+    padding: 10px 40px;
+}
+
+.imgObsessed1 {
+    max-width: 1900px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: auto;
+}
+.main:hover .imgObsessed1{
+    -webkit-transform: scale(0.8); transform: scale(0.8);
+}
+.main{
+    overflow: hidden;
+}
+
+.imgObsessed2 {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.imgObsessed2:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.imgObsessed3 {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.imgObsessed3:hover{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+h3 .cursive {
+    background-color: pink;
+    border-radius: 1em;
+}
+
+.wr {
+    width: 450px;
+    background: #fff;
+    padding: 30px;
+    position: relative;
+    display: flex;
+}
+
+.wr label{
+    font-family: 'Poppins', sans-serif;
+}
+
+.wr .input-data {
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.wr .input-data input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+}
+
+.input-data input:focus~label,
+.input-data input:valid~label {
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: pink;
+}
+
+.wr .input-data label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-data .underline {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+}
+
+.input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: pink;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus~.underline:before,
+.input-data input:valid~.underline:before {
+    transform: scaleX(1);
+}
+
+.pink-border{
+    border-radius: 2em;
+    font-size: 2em;
+    padding: 5px 0px;
+    background-color: pink;
+}
+
+h3{
+    text-align: center;
+    font-size: 15;
+    padding: 5px 5px;
+    font-family: 'Cinzel', serif;
+}
+
+.content{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 100px;
+    margin-top: 5px;
+    border-top: 6px;
+    text-align: right;
+    font-weight: normal;
+}
+
+h2{
+    font-size: 1em;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.braVid{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2em 2em;
+}
+
+.lower{
+ 
+}
+
+#b{
+    font-size: 40px;
+    padding: 10px .8em;
+    text-align: center;
+}
+
+#x{
+    font-size: 20px;
+    padding: 5px 5px;
+    text-align: center;
+}
+.btn{
+    border: none;
+    background-color:rgba(241, 235, 235, 0.911);
+    width: 100px;
+    
+}
+.btn:hover{
+    background-color:#ffb3cb;
+}
+.btn2{
+    border: none;
+    background-color:rgba(241, 235, 235, 0.911);
+    width: 200px;
+    
+}
+.btn2:hover{
+    background-color:#ffb3cb;
+}
+pre{
+    font-family: Victoria-secret;
+}
+
