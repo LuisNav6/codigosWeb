@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(leaves.png);
+    flex-direction: column;
+}
+
+form{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+form fieldset{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+input[type=text], input[type=password]{
+    margin: 1rem;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+input[type=password]{
+    margin-left: 0;
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: whitesmoke;
+    font-size: 1em;
+}
+
+p{
+    background-color: rgba(255,255,255,0.5);
+    padding: 1em;
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 6px;;
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+label{
+    font-family: 'Lobster', cursive;
+    font-size: 1em;
+}

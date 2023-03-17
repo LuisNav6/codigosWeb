@@ -7,7 +7,7 @@ fieldset{
     text-decoration: none;
 }
 div{
-    width: 90%;
+    width: 74%;
     height: max-content;
 }
 th, pre{
@@ -27,7 +27,6 @@ legend{
     font-size: 30px;
 }
 body{
-    padding-right: 38px;
     background-image: url("../media/images/fondo.jpeg");
 }
 

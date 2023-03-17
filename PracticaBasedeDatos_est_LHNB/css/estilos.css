@@ -1,0 +1,125 @@
+.contenedor1{
+  display:flex;
+  border-radius: 10px;
+  border: none;
+}
+.contenedor2{
+  display:flex;
+  flex-direction:column;
+  width:40%;
+  border-radius: 10px;
+  border: none;
+  
+}
+body{
+  margin: 40px;
+  background-image: linear-gradient(270deg, #6d5e73 0, #5a496a 16.67%, #413361 33.33%, #1f1f59 50%, #000e51 66.67%, #00004b 83.33%, #000045 100%);
+   
+}
+
+.izquierdaAlta{
+   
+  height: 300px;
+  background-color: #39ADFD;
+  font-family: 'Roboto Mono',monospace;
+  border-radius: 10px;
+  border: none;
+  
+  
+}
+
+ .izqAlta form{
+   margin-left: 20px;
+   margin-top:10px;
+   font-family: 'Roboto Mono',monospace;
+   border-radius: 10px;
+  border: none;
+ }
+
+.izquierdaBaja{
+   
+  height: 300px;
+  background-color:#0574C0;
+  font-family: 'Roboto Mono',monospace;
+  border-radius: 10px;
+  border: none;
+  
+}
+.derecha{
+   width:60%;
+   height: 600px;
+   background-color:#074D7C;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Roboto Mono',monospace;
+   border-radius: 10px;
+  border: none;
+  
+        
+}
+
+ 
+.estiloformulario{
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Roboto Mono',monospace;
+}
+
+
+td,th{
+  padding:10px;
+  font-family: 'Roboto Mono',monospace; 
+  color: white;
+}
+body{
+  margin:50px; background-image: linear-gradient(270deg, #6d5e73 0, #5a496a 16.67%, #413361 33.33%, #1f1f59 50%, #000e51 66.67%, #00004b 83.33%, #000045 100%);
+}
+.wrapper {
+  background-color: white;
+  list-style-type: none;
+  padding: 0;
+  border-radius: 3px;
+   
+}
+.form-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+}
+.form-row > label {
+  padding: .5em 1em .5em 0;
+  flex: 1;
+}
+.form-row > input {
+  flex: 2;
+}
+.form-row > input,
+.form-row > button {
+  padding: .5em;
+}
+.form-row > button {
+border: 0;
+}
+
+/* reducir tamano del formulario*/
+form{
+  width: 50%;
+  font-family: 'Roboto Mono',monospace;
+  border-radius: 10px;
+  border: none;
+}
+
+#btn{
+  border-radius: 10px;
+  border:none;
+  background-color: #03253C;
+  color:white;
+  text-align: center;
+  transition: 0.5s;
+}
+#btn:hover{
+  transform: scale(1.1);
+}
+ 

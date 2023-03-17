@@ -8,19 +8,8 @@ body{
 @font-face {
     font-family: Victoria-Secret;
     src: url("../media/fonts/Victoria-Secret-Font.ttf");
-    font-family: Beauty;
-    src: url("../media/fonts/beauty.woff");
-    font-family: Pik;
-    src: url("../media/fonts/pink.woff");
 }
-.bea{
-    font-family: Beauty;
-    font-weight: bold;
-}
-.pik{
-    font-family: Pik;
-    font-weight: bold;
-}
+
 h1{
     font-family: Victoria-Secret;
     text-align: center;
@@ -330,4 +319,3 @@ background-color:#db5cca ;
 #ubi:hover{
     background-color: #db5cca;
 }
-
