@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="box">
+    <h1>LUIS NAVARRETE</h1>
+    <br>
+    <label for="name">nombre: </label>
+    <input type="text" id="nombre"/>
+    
+    <label for="pass">password</label>
+    <input type="text" id="password"/>
+    <br><br>
+    <input type="button" value="guardar Datos" onclick="guardarDatos()" id="btn"/>
+    <br>
+    <p id="datos">Pulsa para ver tus datos y tu nombre!</p>
+     <br>
+    <input type="button" value="recuperar Datos" onclick="recuperarDatos()" id="btn"/>
+    </div>
+</div>
+</body>
+</html>

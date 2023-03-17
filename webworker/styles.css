@@ -1,0 +1,36 @@
+body{
+    background-image: radial-gradient(circle at 0% 0%, #ac64db 0, #8552d8 25%, #4d42d4 50%, #0037d0 75%, #0031cd 100%);
+}
+#workerDesk{
+    position: relative;
+    width: 90%;
+    margin :auto;
+}
+input{
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-image: radial-gradient(circle at 50% -20.71%, #d1fff8 0, #befff6 10%, #a7fff4 20%, #8dfff3 30%, #6cfbf2 40%, #3cf2f2 50%, #00e8f3 60%, #00dff5 70%, #00d6f9 80%, #00cefd 90%, #00c6ff 100%);
+}
+.worker{
+    position: relative;
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 10px 15px;
+    border: 2px solid #cacaca;
+    width: 30%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow:  0 0 5px rgba(0,0,0,0.3);
+    color: white;
+}
+.worker > p{
+    margin: 0px;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2{
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,39 @@
+$colorbg: #403AAA;
+$widthh1: 400px;
+$w2:$widthh1+20px;
+$font:Arial;
+body{
+    background-color:$colorbg;
+}
+h1{
+    color: $colorbg;
+    background-color: white;
+    padding: 15px;
+    width: $widthh1;
+    font-family: $font;
+}
+p{
+    width: $w2;
+    color: white;
+    font-family: $font;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 60px 0;
+
+    li{
+        display: inline-block;
+
+        a{
+           text-decoration: none;  
+           color:$colorbg;
+           padding: 20px;
+           background-color: white; 
+           font-family: $font;
+        }
+    }
+}
+
+
